@@ -1,6 +1,6 @@
 variable "environment" {
         type = string
-        default = "dev"
+        default = "development"
 }
 
 variable "service_name" {
@@ -8,7 +8,7 @@ variable "service_name" {
         default = "web"
 }
 
-variable "lambda_service" {
+variable "lambda_functions" {
   description = "Application Lambda Services"
   default = {
     "app-lambda-1" = {
